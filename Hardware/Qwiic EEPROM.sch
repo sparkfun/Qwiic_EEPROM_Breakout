@@ -918,6 +918,50 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </polygon>
 <circle x="0" y="0" radius="1.74625" width="0.2032" layer="21"/>
 </package>
+<package name="SMT-JUMPER_2_NC_TRACE_NO-SILK" urn="urn:adsk.eagle:footprint:39257/1" locally_modified="yes">
+<smd name="1" x="-0.5207" y="0" dx="0.6604" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.5207" y="0" dx="0.6604" dy="1.27" layer="1" cream="no"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<polygon width="0.127" layer="29">
+<vertex x="-0.1905" y="0.127"/>
+<vertex x="0.1905" y="0.127"/>
+<vertex x="0.1905" y="-0.127"/>
+<vertex x="-0.1905" y="-0.127"/>
+</polygon>
+<polygon width="0.0127" layer="1">
+<vertex x="-0.6985" y="0.127"/>
+<vertex x="0.18415" y="0.127"/>
+<vertex x="0.18415" y="-0.127"/>
+<vertex x="-0.6985" y="-0.127"/>
+</polygon>
+</package>
+<package name="SMT-JUMPER_2_NC_TRACE_SILK" urn="urn:adsk.eagle:footprint:39258/1" locally_modified="yes">
+<wire x1="0.762" y1="-1.016" x2="-0.762" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="0.762" y1="1.016" x2="1.2192" y2="0.5588" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.2192" y1="0.5588" x2="-0.762" y2="1.016" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.2192" y1="-0.5588" x2="-0.762" y2="-1.016" width="0.2032" layer="21" curve="90"/>
+<wire x1="0.762" y1="-1.016" x2="1.2192" y2="-0.5588" width="0.2032" layer="21" curve="90"/>
+<wire x1="1.2192" y1="-0.5588" x2="1.2192" y2="0.5588" width="0.2032" layer="21"/>
+<wire x1="-1.2192" y1="-0.5588" x2="-1.2192" y2="0.5588" width="0.2032" layer="21"/>
+<wire x1="-0.762" y1="1.016" x2="0.762" y2="1.016" width="0.2032" layer="21"/>
+<smd name="1" x="-0.5207" y="0" dx="0.6604" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.5207" y="0" dx="0.6604" dy="1.27" layer="1" cream="no"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<polygon width="0.127" layer="29">
+<vertex x="-0.1905" y="0.127"/>
+<vertex x="0.1905" y="0.127"/>
+<vertex x="0.1905" y="-0.127"/>
+<vertex x="-0.1905" y="-0.127"/>
+</polygon>
+<polygon width="0.0127" layer="1">
+<vertex x="-0.6985" y="0.127"/>
+<vertex x="0.18415" y="0.127"/>
+<vertex x="0.18415" y="-0.127"/>
+<vertex x="-0.6985" y="-0.127"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SMT-JUMPER_3_2-NC_TRACE_SILK" urn="urn:adsk.eagle:package:39289/1" locally_modified="yes" type="box">
@@ -958,6 +1002,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <package3d name="SMT-JUMPER_2_NO_SILK_ROUND" urn="urn:adsk.eagle:package:39280/1" type="box">
 <packageinstances>
 <packageinstance name="SMT-JUMPER_2_NO_SILK_ROUND"/>
+</packageinstances>
+</package3d>
+<package3d name="SMT-JUMPER_2_NC_TRACE_NO-SILK" urn="urn:adsk.eagle:package:39286/1" type="box">
+<packageinstances>
+<packageinstance name="SMT-JUMPER_2_NC_TRACE_NO-SILK"/>
+</packageinstances>
+</package3d>
+<package3d name="SMT-JUMPER_2_NC_TRACE_SILK" urn="urn:adsk.eagle:package:39281/1" type="box">
+<packageinstances>
+<packageinstance name="SMT-JUMPER_2_NC_TRACE_SILK"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1002,6 +1056,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
 <wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="SMT-JUMPER_2_NC_TRACE">
+<wire x1="0.381" y1="0.635" x2="1.016" y2="0" width="1.27" layer="94" curve="-90" cap="flat"/>
+<wire x1="1.016" y1="0" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-90" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-2.54" y="-2.54" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
@@ -1146,6 +1212,45 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:39280/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER-SMT_2_NC_TRACE" prefix="JP">
+<description>&lt;h3&gt;Normally closed trace jumper&lt;/h3&gt;
+&lt;p&gt;This jumper has a trace between two pads so it's normally closed (NC). Use a razor knife to open the connection. For best results follow the IPC guidelines for cutting traces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cutout at least 0.063 mm (0.005 in).&lt;/li&gt;
+&lt;li&gt;Remove all loose material to clean up the cut area.&lt;/li&gt;
+&lt;li&gt;Seal the cut with an approved epoxy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Reapply solder to reclose the connection.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SMT-JUMPER_2_NC_TRACE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_NO-SILK" package="SMT-JUMPER_2_NC_TRACE_NO-SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39286/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK" package="SMT-JUMPER_2_NC_TRACE_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39281/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -23871,6 +23976,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J5" library="SparkFun-Connectors" deviceset="CONN_04" device="1X04_NO_SILK_NO_POP"/>
 <part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="POWER" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -23881,7 +23987,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 Default: 0x50</text>
 <text x="205.74" y="127" size="1.778" layer="97" font="vector">Clear Jumper to remove 
 I2C Pull-ups from bus</text>
-<text x="30.988" y="136.906" size="1.778" layer="97" font="vector">Power</text>
 <text x="157.48" y="124.46" size="1.778" layer="97" font="vector">Close WP jumper to 
 enable write protection
 </text>
@@ -23965,26 +24070,26 @@ enable write protection
 <attribute name="NAME" x="195.58" y="117.602" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="198.12" y="129.54" smashed="yes">
-<attribute name="VALUE" x="198.12" y="132.334" size="1.778" layer="96" align="bottom-center"/>
+<attribute name="VALUE" x="198.12" y="132.334" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY3" gate="G$1" x="160.02" y="109.22" smashed="yes">
-<attribute name="VALUE" x="160.02" y="112.014" size="1.778" layer="96" align="bottom-center"/>
+<attribute name="VALUE" x="160.02" y="112.014" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY4" gate="G$1" x="35.56" y="50.8" smashed="yes">
-<attribute name="VALUE" x="35.56" y="53.594" size="1.778" layer="96" align="bottom-center"/>
+<attribute name="VALUE" x="35.56" y="53.594" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY5" gate="G$1" x="81.28" y="109.22" smashed="yes">
-<attribute name="VALUE" x="81.28" y="112.014" size="1.778" layer="96" align="bottom-center"/>
+<attribute name="VALUE" x="81.28" y="112.014" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="GND4" gate="1" x="81.28" y="93.98" smashed="yes">
-<attribute name="VALUE" x="78.74" y="91.44" size="1.778" layer="96"/>
+<attribute name="VALUE" x="78.74" y="91.44" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="J2" gate="G$1" x="45.72" y="43.18" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="50.8" y="37.846" size="1.778" layer="96" font="vector" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="50.8" y="51.054" size="1.778" layer="95" font="vector" rot="MR0"/>
 </instance>
 <instance part="GND6" gate="1" x="35.56" y="35.56" smashed="yes">
-<attribute name="VALUE" x="33.02" y="33.02" size="1.778" layer="96"/>
+<attribute name="VALUE" x="33.02" y="33.02" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
 <instance part="FRAME1" gate="V" x="147.32" y="0" smashed="yes">
@@ -23997,14 +24102,14 @@ enable write protection
 <attribute name="VALUE" x="82.804" y="99.441" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="SUPPLY8" gate="G$1" x="35.56" y="22.86" smashed="yes">
-<attribute name="VALUE" x="35.56" y="25.654" size="1.778" layer="96" align="bottom-center"/>
+<attribute name="VALUE" x="35.56" y="25.654" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="J4" gate="G$1" x="45.72" y="15.24" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="50.8" y="9.906" size="1.778" layer="96" font="vector" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="50.8" y="23.114" size="1.778" layer="95" font="vector" rot="MR0"/>
 </instance>
 <instance part="GND8" gate="1" x="35.56" y="7.62" smashed="yes">
-<attribute name="VALUE" x="33.02" y="5.08" size="1.778" layer="96"/>
+<attribute name="VALUE" x="33.02" y="5.08" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="LOGO1" gate="G$1" x="160.02" y="48.26" smashed="yes"/>
 <instance part="JP1" gate="G$1" x="236.22" y="27.94" smashed="yes"/>
@@ -24014,14 +24119,14 @@ enable write protection
 <attribute name="VALUE" x="26.924" y="149.86" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="SUPPLY10" gate="G$1" x="25.4" y="157.48" smashed="yes">
-<attribute name="VALUE" x="25.4" y="160.274" size="1.778" layer="96" align="bottom-center"/>
+<attribute name="VALUE" x="25.4" y="160.274" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="D1" gate="G$1" x="25.4" y="139.7" smashed="yes">
 <attribute name="NAME" x="21.971" y="135.128" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="27.305" y="135.128" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
 <instance part="U1" gate="G$1" x="144.78" y="104.14" smashed="yes">
-<attribute name="NAME" x="137.16" y="109.982" size="1.778" layer="95"/>
+<attribute name="NAME" x="137.16" y="109.982" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="137.16" y="93.98" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="E2" gate="G$1" x="119.38" y="96.52" smashed="yes" rot="MR0">
@@ -24043,13 +24148,13 @@ enable write protection
 <attribute name="VALUE" x="116.84" y="83.82" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="SUPPLY2" gate="G$1" x="99.06" y="132.08" smashed="yes">
-<attribute name="VALUE" x="99.06" y="134.874" size="1.778" layer="96" align="bottom-center"/>
+<attribute name="VALUE" x="99.06" y="134.874" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY6" gate="G$1" x="109.22" y="132.08" smashed="yes">
-<attribute name="VALUE" x="109.22" y="134.874" size="1.778" layer="96" align="bottom-center"/>
+<attribute name="VALUE" x="109.22" y="134.874" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY9" gate="G$1" x="119.38" y="132.08" smashed="yes">
-<attribute name="VALUE" x="119.38" y="134.874" size="1.778" layer="96" align="bottom-center"/>
+<attribute name="VALUE" x="119.38" y="134.874" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="J1" gate="G$1" x="83.82" y="20.32" smashed="yes" rot="R180">
 <attribute name="VALUE" x="86.36" y="25.146" size="1.778" layer="96" font="vector" rot="R180"/>
@@ -24063,10 +24168,10 @@ enable write protection
 <attribute name="VALUE" x="169.164" y="91.44" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="GND10" gate="1" x="167.64" y="81.28" smashed="yes">
-<attribute name="VALUE" x="167.64" y="81.026" size="1.778" layer="96" align="top-center"/>
+<attribute name="VALUE" x="167.64" y="81.026" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="SUPPLY11" gate="G$1" x="170.18" y="119.38" smashed="yes">
-<attribute name="VALUE" x="170.18" y="122.174" size="1.778" layer="96" align="bottom-center"/>
+<attribute name="VALUE" x="170.18" y="122.174" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="R2" gate="G$1" x="99.06" y="124.46" smashed="yes" rot="R90">
 <attribute name="NAME" x="97.536" y="124.46" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -24085,18 +24190,21 @@ enable write protection
 <instance part="JP8" gate="G$1" x="243.84" y="27.94" smashed="yes"/>
 <instance part="LOGO3" gate="G$1" x="177.8" y="40.64" smashed="yes"/>
 <instance part="LOGO4" gate="G$1" x="160.02" y="60.96" smashed="yes"/>
-<instance part="GND3" gate="1" x="25.4" y="129.54" smashed="yes">
-<attribute name="VALUE" x="25.4" y="129.286" size="1.778" layer="96" align="top-center"/>
+<instance part="GND3" gate="1" x="25.4" y="116.84" smashed="yes">
+<attribute name="VALUE" x="25.4" y="116.586" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="J5" gate="J1" x="81.28" y="43.18" smashed="yes" rot="R180">
 <attribute name="VALUE" x="86.36" y="50.546" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="86.36" y="35.052" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="GND11" gate="1" x="73.66" y="33.02" smashed="yes">
-<attribute name="VALUE" x="73.66" y="32.766" size="1.778" layer="96" align="top-center"/>
+<attribute name="VALUE" x="73.66" y="32.766" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="SUPPLY7" gate="G$1" x="73.66" y="48.26" smashed="yes">
-<attribute name="VALUE" x="73.66" y="51.054" size="1.778" layer="96" align="bottom-center"/>
+<attribute name="VALUE" x="73.66" y="51.054" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="POWER" gate="G$1" x="25.4" y="127" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.86" y="124.46" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -24208,33 +24316,33 @@ enable write protection
 <wire x1="167.64" y1="83.82" x2="167.64" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="25.4" y1="132.08" x2="25.4" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="J5" gate="J1" pin="4"/>
 <wire x1="76.2" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91" style="longdash"/>
 <wire x1="73.66" y1="38.1" x2="73.66" y2="35.56" width="0.1524" layer="91" style="longdash"/>
 <pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="POWER" gate="G$1" pin="1"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="25.4" y1="119.38" x2="25.4" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="38.1" y1="48.26" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
-<label x="33.02" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="33.02" y="48.26" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="4"/>
 <wire x1="38.1" y1="20.32" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
-<label x="33.02" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="33.02" y="20.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="205.74" y1="101.6" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="101.6" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<label x="208.28" y="101.6" size="1.27" layer="95" xref="yes"/>
+<label x="208.28" y="101.6" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="SCL"/>
 <wire x1="157.48" y1="101.6" x2="205.74" y2="101.6" width="0.1524" layer="91"/>
 <junction x="205.74" y="101.6"/>
@@ -24249,18 +24357,18 @@ enable write protection
 <segment>
 <pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="38.1" y1="45.72" x2="33.02" y2="45.72" width="0.1524" layer="91"/>
-<label x="33.02" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="33.02" y="45.72" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="3"/>
 <wire x1="38.1" y1="17.78" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
-<label x="33.02" y="17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="33.02" y="17.78" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="190.5" y1="99.06" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="99.06" x2="208.28" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<label x="208.28" y="99.06" size="1.27" layer="95" xref="yes"/>
+<label x="208.28" y="99.06" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="SDA"/>
 <wire x1="157.48" y1="99.06" x2="190.5" y2="99.06" width="0.1524" layer="91"/>
 <junction x="190.5" y="99.06"/>
@@ -24305,11 +24413,11 @@ enable write protection
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="20.32" x2="73.66" y2="20.32" width="0.1524" layer="91"/>
-<label x="73.66" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="73.66" y="20.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="WP"/>
-<label x="175.26" y="104.14" size="1.27" layer="95" xref="yes"/>
+<label x="175.26" y="104.14" size="1.27" layer="95" font="vector" xref="yes"/>
 <wire x1="157.48" y1="104.14" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="96.52" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
@@ -24358,6 +24466,13 @@ enable write protection
 <wire x1="127" y1="101.6" x2="127" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="E2" gate="G$1" pin="2"/>
 <wire x1="127" y1="96.52" x2="124.46" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="POWER" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="132.08" x2="25.4" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
