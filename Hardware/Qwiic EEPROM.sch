@@ -24002,7 +24002,7 @@ enable write protection
 <text x="7.62" y="177.8" size="2.54" layer="94" font="vector">Power LED</text>
 <text x="63.5" y="177.8" size="2.54" layer="94" font="vector">EEPROM - 512Kbit</text>
 <text x="7.62" y="63.5" size="2.54" layer="94" font="vector">Connectors</text>
-<text x="132.08" y="78.74" size="1.778" layer="97" font="vector">Vcc range: -0.3V to 3.6V</text>
+<text x="127" y="81.28" size="1.778" layer="97" font="vector">Max Vcc range: -0.3V to 3.6V</text>
 <text x="27.94" y="124.46" size="1.778" layer="97" font="vector">Cut jumper to disable 
 PWR LED.</text>
 </plain>
