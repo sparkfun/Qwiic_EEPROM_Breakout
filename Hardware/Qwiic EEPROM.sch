@@ -23900,7 +23900,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R3" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
-<part name="U1" library="SparkFun-IC-Memory" deviceset="RM24C512C" device="">
+<part name="U1" library="SparkFun-IC-Memory" deviceset="RM24C512C" device="" value="CAT24C51">
 <attribute name="PROD_ID" value="IC-14645"/>
 </part>
 <part name="E2" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39288/1" value="JUMPER-SMT_3_1-NC_TRACE_SILK"/>
